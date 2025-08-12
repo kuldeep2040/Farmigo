@@ -1,5 +1,6 @@
 import React from "react";
 import { useNavigate } from "react-router-dom";
+import heroBg from '/images/home-banner/home2.jpg';
 
 function Hero() {
   const navigate = useNavigate();
@@ -13,7 +14,7 @@ function Hero() {
   return (
     <section className="relative overflow-hidden bg-gradient-to-br from-black to-black">
       <img
-        src="../../public/images/home-banner/home2.jpg"
+        src={heroBg}
         alt="Background"
         className="absolute inset-0 w-full h-full object-cover opacity-30 z-0"
       />
